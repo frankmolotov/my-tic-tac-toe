@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Sign Up</h1>
+<form action="/signup" method="post" name="register">
+	{{form.hidden_tag()}}
+	<p>{{ form.username }} Username<p>
+	<p>{{ form.email }} Email</p>
+	<p>{{ form.password }} Password</p>
+	<p>{{ form.confirm }} Repeat password</p><br>
+	{% for error in form.errors.password %}
+        <span class = 'error' >{{error}}</span>
+    {% endfor %}
+    {% for error in form.errors.email %}
+        <span class = 'error' >{{error}}</span>
+    {% endfor %}
+    <p><input type="submit" value="Sign Up"></p>
+</form>
+{% endblock %}

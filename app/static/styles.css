@@ -1,0 +1,52 @@
+body{
+	background-color: #CEF6EC
+}
+ul{
+  padding:0;
+}
+a.headerbutton{
+  display:inline-block;
+  text-decoration:none;
+  width: 200px;
+  height: 50px;
+  padding: 20px 45px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 22px;
+  border: 3px solid #28F2B3;
+  color: #28F2B3;
+  line-height: 64px;
+  background: none;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  box-shadow: 0 0 5px #222;
+  border-radius: 70px;
+  -webkit-animation: over 6s infinite;
+  animation: over 6s infinite;	
+  line-height:50px;
+}
+
+
+.header-element{
+
+  display:inline-block;
+}
+form{
+	text-decoration: none;
+	color: green;
+	padding: 10px 30px;
+}
+span{
+	display:inline-block;
+}
+span.error{
+	color:red;
+}
+span.notification{
+	color:green;
+}
